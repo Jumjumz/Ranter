@@ -15,7 +15,9 @@ export default function HomePage() {
           <Link
             href="/"
             className=" w-44 h-16 rounded-2xl bg-red-500 font-sans text-xl flex items-center justify-center"
-            onClick={() => signOut()}
+            onClick={() => {
+              signOut(), redirect("/");
+            }}
           >
             Log Out
           </Link>
