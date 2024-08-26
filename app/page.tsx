@@ -7,7 +7,7 @@ export default function Home() {
       <div className=" flex flex-col flex-wrap justify-center">
         <Link
           href="/UserAuth"
-          className=" w-44 h-16 rounded-2xl bg-red-500 font-sans text-xl flex items-center justify-center"
+          className=" w-44 h-16 rounded-2xl bg-green-500 font-sans text-xl flex items-center justify-center"
         >
           Login
         </Link>
