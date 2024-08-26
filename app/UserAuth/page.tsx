@@ -6,7 +6,6 @@ export default async function Userpage() {
 
   if (!session || !session.user) {
     redirect("/api/auth/signin");
-  } else if (session) {
-    redirect("/HomePage");
   }
+  redirect("/");
 }

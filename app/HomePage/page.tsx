@@ -2,8 +2,8 @@
 
 import { useSession, signOut } from "next-auth/react";
 import Link from "next/link";
-import { redirect } from "next/navigation";
 import NavBar from "../components/navbar/page";
+import { redirect } from "next/navigation";
 
 export default function HomePage() {
   const { data: session } = useSession();
@@ -23,6 +23,7 @@ export default function HomePage() {
           >
             Log Out
           </Link>
+          <div>{session.user!.email}</div>
         </div>
       </>
     );
