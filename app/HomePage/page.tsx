@@ -3,6 +3,7 @@
 import { useSession, signOut } from "next-auth/react";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import NavBar from "../components/navbar/page";
 
 export default function HomePage() {
   const { data: session } = useSession();
@@ -10,6 +11,7 @@ export default function HomePage() {
   if (session) {
     return (
       <>
+        <NavBar />
         <div className="flex min-h-screen flex-col items-center justify-center gap-8 p-24 ">
           <h1 className=" font-mono text-3xl">You Are Logged In.</h1>
           <Link
