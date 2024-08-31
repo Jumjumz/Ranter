@@ -5,7 +5,7 @@ import GoogleProvider from "next-auth/providers/google";
 export const authOptions = {
     providers: [
         GoogleProvider({
-            clientId: process.env.GOOGLE_CLIENT_LOCAL_ID as string,
+            clientId: process.env.GOOGLE_CLIENT_LOCAL_ID as string, // connect to google client id
             clientSecret: process.env.GOOGLE_CLIENT_LOCAL_SECRET as string,
         }),
     ],
